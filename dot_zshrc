@@ -110,5 +110,8 @@ export MCFLY_INTERFACE_VIEW=BOTTOM
 export MCFLY_RESULTS_SORT=LAST_RUN
 eval "$(mcfly init zsh)"
 
-## Run neofetch
+# Run fastfetch
 fastfetch --load-config dr460nized
+
+# Load navi widget
+eval "$(navi widget zsh)"
