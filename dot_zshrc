@@ -111,7 +111,9 @@ export MCFLY_RESULTS_SORT=LAST_RUN
 eval "$(mcfly init zsh)"
 
 # Run fastfetch
-fastfetch --load-config dr460nized
+# fastfetch --load-config dr460nized
 
 # Load navi widget
 eval "$(navi widget zsh)"
+
+export VISUAL="emacs"
