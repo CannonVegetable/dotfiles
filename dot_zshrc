@@ -103,7 +103,7 @@ fi
 alias sbcl="rlwrap sbcl"
 
 # Recent installed packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+# alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 # Load Mcfly
 export MCFLY_FUZZY=true
@@ -119,3 +119,6 @@ eval "$(mcfly init zsh)"
 eval "$(navi widget zsh)"
 
 export VISUAL="emacs"
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
